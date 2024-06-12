@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Add Google Font -->
+    <style>
+        .product {
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .shop-now {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        .shop-now:hover {
+            text-decoration: underline;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .navbar {
+            background-color: #000; /* Change navbar background to black */
+        }
+        .navbar-nav .nav-link,
+        .navbar-brand {
+            color: #fff; /* Change text and icon color to white */
+        }
+        .navbar-brand {
+            font-family: 'Roboto', sans-serif; /* Apply custom font to navbar brand */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">CheliniShoes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=CllgCJNvvhqxszBLXXxrsDnlbSlrrfrGxgtRpcfBqTLxbHhxWpTQhBlPSNhjsDQwHLrSMQrLNqV">Contact <i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <h2 style="text-align: center;">CheliniShoes</h2>
+    <br>
+
+<div class="container">
+    <div class="row">
+        <!-- Product Card 1 -->
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div class="product" data-url="https://vt.tokopedia.com/t/ZSYAfsF6K/">
+                <img src="sepatu1.jpeg" alt="Product 1">
+                <div class="product-title">SEPATU SNEAKERS ANAK UNTUK USIA  UNTUK USIA 3-9 TAHUN</div>
+                <a href="https://vt.tokopedia.com/t/ZSYAfsF6K/" class="btn btn-primary">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div class="product" data-url="https://vt.tokopedia.com/t/ZSYAfbdjM/">
+                <img src="sepatu3.jpeg" alt="Product 2">
+                <div class="product-title">Sepatu Sneakers Wanita Import Premium/Cassual Shoes Runing Canvas</div>
+                <a href="https://vt.tokopedia.com/t/ZSYAfbdjM/" class="btn btn-primary">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div class="product" data-url="https://vt.tokopedia.com/t/ZSYAf4ETv/">
+                <img src="gambar2.jpeg" alt="Product 3">
+                <div class="product-title">Sepatu Cassual Wanita/Sepatu Olahraga Cassual Alas karet Cassual</div>              
+                <a href="https://vt.tokopedia.com/t/ZSYAf4ETv/" class="btn btn-primary">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div class="product" data-url="https://vt.tokopedia.com/t/ZSYAfDMoK/">
+                <img src="gambar4.jpeg" alt="Product 3">
+                <div class="product-title">Sepatu Sneakers Wanita Cassual Shoes</div>              
+                <a href="https://vt.tokopedia.com/t/ZSYAfDMoK/" class="btn btn-primary">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div class="product" data-url="https://vt.tokopedia.com/t/ZSYAfHSV9/">
+                <img src="gambar5.jpeg" alt="Product 3">
+                <div class="product-title">Sepatu Sneakers Wanita Fashion Cassual Shoes</div>              
+                <a href="https://vt.tokopedia.com/t/ZSYAfHSV9/" class="btn btn-primary">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- Placeholder for additional product cards -->
+        <!-- Add more product cards here by copying the structure above -->
+    </div>
+</div>
+
+
+
+<script>
+    document.querySelectorAll('.product').forEach(item => {
+        item.addEventListener('click', event => {
+            const url = item.getAttribute('data-url');
+            window.location.href = url;
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
